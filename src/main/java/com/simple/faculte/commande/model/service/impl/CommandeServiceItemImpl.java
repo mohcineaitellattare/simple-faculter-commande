@@ -35,8 +35,8 @@ public class CommandeServiceItemImpl implements CommandeItemService{
     }
 
     @Override
-    public List<CommandeItem> findByCommande(Commande commande) {
-        return commandeItemDao.findByCommande(commande);
+    public List<CommandeItem> findByCommandeReference(String reference) {
+        return commandeItemDao.findByCommandeReference(reference);
     }
 
     public CommandeItemDao getCommandeItemDao() {

@@ -16,6 +16,6 @@ import java.util.List;
 public interface CommandeItemService {
     
     public int saveCommandeItems(Commande commande,List<CommandeItem> commandeItems);
-    public List<CommandeItem> findByCommande(Commande commande);
+    public List<CommandeItem> findByCommandeReference(String reference);
 
 }

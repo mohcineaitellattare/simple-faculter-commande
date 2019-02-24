@@ -48,6 +48,11 @@ public class CommandeServiceImpl implements CommandeService{
         }
         commande.setTotal(total);
     }
+     
+     @Override
+    public List<Commande> findAll() {
+        return commandeDao.findAll();
+    }
 
     public CommandeItemService getCommandeItemService() {
         return commandeItemService;
@@ -65,6 +70,8 @@ public class CommandeServiceImpl implements CommandeService{
     public void setCommandeDao(CommandeDao commandeDao) {
         this.commandeDao = commandeDao;
     }
+
+    
 
    
     

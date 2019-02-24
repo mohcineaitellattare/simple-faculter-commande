@@ -13,10 +13,10 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author mohcine
+ * @author mohcines
  */
 @Repository
 public interface CommandeItemDao extends JpaRepository<CommandeItem, Long>{
     
-    public List<CommandeItem> findByCommande(Commande commande);
+    public List<CommandeItem> findByCommandeReference(String reference);
 }

@@ -6,6 +6,7 @@
 package com.simple.faculte.commande.model.service;
 
 import com.simple.faculte.commande.bean.Commande;
+import java.util.List;
 
 /**
  *
@@ -15,5 +16,6 @@ public interface CommandeService {
     
     public Commande saveCommande(Commande commande);
     public Commande findByReference(String reference);
+    public List<Commande> findAll();
 
 }
