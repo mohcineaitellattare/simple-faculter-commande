@@ -60,8 +60,8 @@ public class CommandeRest {
     }
 
     @GetMapping("/")
-    public List<CommandeVo> findAll() {
-        return commandeConverter.toVo(commandeService.findAll());
+    public List<CommandeVo> findAllCommande() {
+        return commandeConverter.toVo(commandeService.findAllCommande());
     }
 
     @GetMapping("/reference/{reference}/commande-items")

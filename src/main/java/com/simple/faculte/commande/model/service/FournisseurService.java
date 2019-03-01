@@ -5,10 +5,15 @@
  */
 package com.simple.faculte.commande.model.service;
 
+import com.simple.faculte.commande.bean.Fournisseur;
+import java.util.List;
+
 /**
  *
  * @author mohcine
  */
 public interface FournisseurService {
+    public Fournisseur findByReference(String reference);
     
+    public List<Fournisseur> findAllFournisseur();
 }

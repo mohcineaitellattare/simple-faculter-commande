@@ -16,6 +16,6 @@ public interface CommandeService {
     
     public Commande saveCommande(Commande commande);
     public Commande findByReference(String reference);
-    public List<Commande> findAll();
+    public List<Commande> findAllCommande();
 
 }

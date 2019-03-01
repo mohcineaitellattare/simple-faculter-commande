@@ -33,7 +33,7 @@ public class Commande implements Serializable {
     private double total;
     private double totalPaiement;
     @Temporal(javax.persistence.TemporalType.DATE)
-    private Date DateCommande;
+    private Date dateCommande;
     @ManyToOne
     private Fournisseur fournisseur;
     @OneToMany(mappedBy = "commande")
@@ -86,12 +86,13 @@ public class Commande implements Serializable {
     }
 
     public Date getDateCommande() {
-        return DateCommande;
+        return dateCommande;
     }
 
-    public void setDateCommande(Date DateCommande) {
-        this.DateCommande = DateCommande;
+    public void setDateCommande(Date dateCommande) {
+        this.dateCommande = dateCommande;
     }
+
 
     public Fournisseur getFournisseur() {
         return fournisseur;

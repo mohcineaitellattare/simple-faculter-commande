@@ -16,7 +16,7 @@ public class CommandeVo {
     private String reference;
     private String total;
     private String totalPaiement;
-    private String DateCommande;
+    private String dateCommande;
     private FournisseurVo fournisseurVo;
     private List<CommandeItemVo> commandeItemVos;
     private List<PaiementVo> paiementVos;
@@ -54,11 +54,11 @@ public class CommandeVo {
     }
 
     public String getDateCommande() {
-        return DateCommande;
+        return dateCommande;
     }
 
-    public void setDateCommande(String DateCommande) {
-        this.DateCommande = DateCommande;
+    public void setDateCommande(String dateCommande) {
+        this.dateCommande = dateCommande;
     }
 
     public FournisseurVo getFournisseurVo() {
